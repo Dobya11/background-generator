@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="panel">
+      <div class="color-group">
+        <label>Background Color</label>
+        <div class="color-input-wrapper">
+          <input type="color" id="color1" value="#000000" />
+          <input
+            type="text"
+            class="hex-input"
+            id="color1Hex"
+            value="#000000"
+            maxlength="7"
+            placeholder="#000000"
+          />
+        </div>
+        <div class="color-presets">
+          <div
+            class="color-preset"
+            style="background: #d47d53"
+            data-color="#D47D53"
+            title="Kenney 1"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #f7bb8d"
+            data-color="#F7BB8D"
+            title="Kenney 2"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #914d35"
+            data-color="#914D35"
+            title="Kenney 3"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #3a232f"
+            data-color="#3A232F"
+            title="Kenney 4"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #dd871e"
+            data-color="#DD871E"
+            title="Kenney 5"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #ffe051"
+            data-color="#FFE051"
+            title="Kenney 6"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #04746b"
+            data-color="#04746B"
+            title="Kenney 7"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #27c67b"
+            data-color="#27C67B"
+            title="Kenney 8"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #920c38"
+            data-color="#920C38"
+            title="Kenney 9"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #e92a55"
+            data-color="#E92A55"
+            title="Kenney 10"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #173d8c"
+            data-color="#173D8C"
+            title="Kenney 11"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #2c6dc1"
+            data-color="#2C6DC1"
+            title="Kenney 12"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #475c72"
+            data-color="#475C72"
+            title="Kenney 13"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #a1b8d1"
+            data-color="#A1B8D1"
+            title="Kenney 14"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #292d31"
+            data-color="#292D31"
+            title="Kenney 15"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #dde5ee"
+            data-color="#DDE5EE"
+            title="Kenney 16"
+          ></div>
+        </div>
+      </div>
+
+      <div class="color-group">
+        <label>Foreground Color</label>
+        <div class="color-input-wrapper">
+          <input type="color" id="color2" value="#ffffff" />
+          <input
+            type="text"
+            class="hex-input"
+            id="color2Hex"
+            value="#ffffff"
+            maxlength="7"
+            placeholder="#ffffff"
+          />
+        </div>
+        <div class="color-presets">
+          <div
+            class="color-preset"
+            style="background: #d47d53"
+            data-color="#D47D53"
+            title="Kenney 1"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #f7bb8d"
+            data-color="#F7BB8D"
+            title="Kenney 2"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #914d35"
+            data-color="#914D35"
+            title="Kenney 3"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #3a232f"
+            data-color="#3A232F"
+            title="Kenney 4"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #dd871e"
+            data-color="#DD871E"
+            title="Kenney 5"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #ffe051"
+            data-color="#FFE051"
+            title="Kenney 6"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #04746b"
+            data-color="#04746B"
+            title="Kenney 7"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #27c67b"
+            data-color="#27C67B"
+            title="Kenney 8"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #920c38"
+            data-color="#920C38"
+            title="Kenney 9"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #e92a55"
+            data-color="#E92A55"
+            title="Kenney 10"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #173d8c"
+            data-color="#173D8C"
+            title="Kenney 11"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #2c6dc1"
+            data-color="#2C6DC1"
+            title="Kenney 12"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #475c72"
+            data-color="#475C72"
+            title="Kenney 13"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #a1b8d1"
+            data-color="#A1B8D1"
+            title="Kenney 14"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #292d31"
+            data-color="#292D31"
+            title="Kenney 15"
+          ></div>
+          <div
+            class="color-preset"
+            style="background: #dde5ee"
+            data-color="#DDE5EE"
+            title="Kenney 16"
+          ></div>
+        </div>
+      </div>
+
+      <select id="tileSize">
+        <option value="21">0.25x</option>
+        <option value="42">0.5x</option>
+        <option value="84" selected>1x</option>
+        <option value="126">1.5x</option>
+        <option value="168">2x</option>
+        <option value="256">3x</option>
+        <option value="512">6x</option>
+      </select>
+
+      <select id="bgSize">
+        <option value="1920x1080">1920x1080</option>
+        <option value="2560x1440">2560x1440</option>
+        <option value="3840x2160">3840x2160</option>
+        <option value="1280x720">1280x720</option>
+        <option value="custom">Custom</option>
+      </select>
+      <div id="customSizeDiv" class="hidden">
+        <input
+          type="number"
+          id="customWidth"
+          value="1920"
+          min="100"
+          placeholder="Width"
+        />
+        <input
+          type="number"
+          id="customHeight"
+          value="1080"
+          min="100"
+          placeholder="Height"
+        />
+      </div>
+
+      <select id="rotation">
+        <option value="0">0</option>
+        <option value="45">45</option>
+        <option value="90">90</option>
+        <option value="135">135</option>
+        <option value="180">180</option>
+      </select>
+      <div>
+        <input type="checkbox" id="enableGif" />
+        <label for="enableGif">Enable GIF Animation</label>
+      </div>
+      <div id="gifDiv" class="hidden">
+        <select id="gifDirection">
+          <option value="horizontal">Horizontal</option>
+          <option value="vertical">Vertical</option>
+          <option value="diagonal">Diagonal</option>
+        </select>
+        <input
+          type="number"
+          id="gifSpeed"
+          value="100"
+          min="50"
+          max="500"
+          step="50"
+          placeholder="Speed (ms)"
+        />
+      </div>
+      <button id="downloadPng">PNG</button>
+      <button id="downloadGif" class="hidden">GIF</button>
+
+      <div class="credit">
+        Patterns:
+        <a
+          href="https://kenney.nl/assets/pattern-pack"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Kenney Pattern Pack</a
+        >
+        +
+        <a
+          href="https://kenney.nl/assets/pattern-pack-extra"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Pattern Pack Extra</a
+        >
+        by
+        <a href="https://kenney.nl/" target="_blank" rel="noopener noreferrer"
+          >Kenney</a
+        >.
+      </div>
+    </div>
+
+    <div id="preview"></div>
+
+    <div class="panel" id="patternPreview"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gif-encoder-2@1.0.5/dist/gif-encoder-2.umd.js"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
