@@ -5,7 +5,6 @@
 //TODO: Fix gif encoder library loading issue
 //TODO: Gaps during rotation
 //TODO: Fix color replacement for grayscale colors(maybe switch to another color dimension)
-//TODO: Add offset position for tiles
 
 const app = {
   svgCache: {},
