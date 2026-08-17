@@ -1,4 +1,4 @@
-# Kenney Background
+# Background generator
 
 Repository for a tool that creates backgrounds for PCs, browsers, etc.
 
@@ -17,3 +17,4 @@ Uses assets created by [Kenney](https://kenney.nl/) - [Pattern Pack](https://ken
 - [ ] Guide
 - [ ] Fix color replacement for grayscale
 - [ ] Custom pattern
+- [ ] Pattern packs
