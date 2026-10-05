@@ -1,11 +1,3 @@
-//TODO: Split this
-//TODO: Add reset
-//TODO: Make smaller functions
-//TODO: Fix gif jumping, speed and direction
-//TODO: Fix gif encoder library loading issue
-//TODO: Gaps during rotation
-//TODO: Fix color replacement for grayscale colors(maybe switch to another color dimension)
-
 const app = {
   svgCache: {},
   patterns: [],
@@ -806,6 +798,20 @@ const app = {
       btn.disabled = false;
       btn.textContent = "GIF";
     }
+  },
+
+  createShare() {
+    const params = new URLSearchParams();
+    params.set("pattern", this.settings.pattern);
+    params.set("color1", this.settings.color1);
+    params.set("color2", this.settings.color2);
+    params.set("tileSize", this.settings.tileSize);
+    params.set("bgWidth", this.settings.bgWidth);
+    params.set("bgHeight", this.settings.bgHeight);
+    params.set("rotation", this.settings.rotation);
+    params.set("enableGif", this.settings.enableGif ? "1" : "0");
+    params.set("gifDirection", this.settings.gifDirection);
+    params.set("gifSpeed", this.settings.gifSpeed);
   },
 };
 

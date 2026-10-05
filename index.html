@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pattern Generator</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/test.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="test.css" /> -->
   </head>
   <body>
     <article>
@@ -396,6 +396,7 @@
       const params = new URLSearchParams(location.search);
 
       if (params.get("t") === "k") {
+        document.head.removeChild(document.head.lastElementChild);
         const link = document.createElement("link");
         link.rel = "stylesheet";
         link.href = "/kenney.css";
